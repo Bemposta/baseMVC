@@ -10,7 +10,6 @@ import javax.swing.JLabel;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JTextField;
-
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.Insets;
@@ -21,7 +20,6 @@ import control.*;
 
 public class VentanaInternaLista extends JInternalFrame{
 	
-
 	public JPanel panel;
 	public JButton botonSeleccionar;
 	public JComboBox usersList; 

@@ -30,9 +30,8 @@ class ManejadorDeFichero {
 		}
 	}
 
-	public Vector<Usuario> leerUsuarios(String fichero, String separador) {
+	public Vector<Usuario> leerUsuarios(String fichero) {
 		this.fichero = fichero;
-		this.separador = separador;
 		Vector<Usuario> listaUsuarios = new Vector<Usuario>();
 
 		File f = new File(fichero);
@@ -44,7 +43,7 @@ class ManejadorDeFichero {
 			do {
 				line = lector.readLine();
 				if (line != null) {
-					StringTokenizer st = new StringTokenizer(line, separador);
+					StringTokenizer st = new StringTokenizer(line, ";");
 					Usuario nuevo = new Usuario(st.nextToken(), st.nextToken());
 					listaUsuarios.add(nuevo);
 				}
